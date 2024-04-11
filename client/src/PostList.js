@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./PostList.scss"; // Assuming the SCSS file is named PostList.scss
+import "./PostList.scss";
+import CommentCreate from "./CommentCreate";
 
 const PostList = () => {
 	const [posts, setPosts] = useState({});
@@ -18,6 +19,7 @@ const PostList = () => {
 		<div className="card" key={post.id}>
 			<div className="card-body">
 				<div className="h3">{post.title}</div>
+				<CommentCreate postId={post.id} />
 			</div>
 		</div>
 	));
