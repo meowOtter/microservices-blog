@@ -1,0 +1,21 @@
+.comment-list {
+	max-width: 500px;
+	padding: 10px 0;
+
+	ul {
+		list-style: none;
+		padding: 0;
+
+		li {
+			padding: 10px;
+			margin: 5px 0;
+			background-color: #ffffffee;
+			border-radius: 4px;
+			box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+			&:not(:last-child) {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
